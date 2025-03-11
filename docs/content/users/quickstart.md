@@ -159,7 +159,7 @@ Further information on the DDEV procedure can also be found in the [Contao docum
 Start a new [Craft CMS](https://craftcms.com) project or retrofit an existing one.
 
 !!!tip "Compatibility with Craft CMS 3"
-The `craftcms` project type is best with Craft CMS 4+, which is more opinionated about some settings. If you are using Craft CMS 3 or earlier, you may want to use the `php` project type and [manage settings yourself](https://github.com/ddev/ddev/issues/4650).
+    The `craftcms` project type is best with Craft CMS 4+, which is more opinionated about some settings. If you are using Craft CMS 3 or earlier, you may want to use the `php` project type and [manage settings yourself](https://github.com/ddev/ddev/issues/4650).
 
 Environment variables will be automatically added to your `.env` file to simplify the first boot of a project. For _new_ installations, this means the default URL and database connection settings displayed during installation can be used without modification. If _existing_ projects expect environment variables to be named in a particular way, you are welcome to rename them.
 
@@ -213,7 +213,7 @@ In order for `ddev craft` to work when Craft is installed in a subdirectory, you
 Read more about customizing the environment and persisting configuration in [Providing Custom Environment Variables to a Container](./extend/customization-extendibility.md#environment-variables-for-containers-and-services).
 
 !!!tip "Installing Craft"
-Read more about installing Craft in the [official documentation](https://craftcms.com/docs).
+    Read more about installing Craft in the [official documentation](https://craftcms.com/docs).
 
 ## Drupal
 
@@ -403,7 +403,7 @@ ddev launch $(ddev drush uli)
     ```
 
 !!!tip "How to update?"
-Upgrade Grave core:
+    Upgrade Grave core:
 
     ```bash
     ddev exec gpm selfupgrade -f
@@ -489,7 +489,7 @@ Start a new [Kirby CMS](https://getkirby.com) project or use an existing one.
     ```
 
 !!!tip "Installing Kirby"
-Read more about developing your Kirby project with DDEV in our [extensive DDEV guide](https://getkirby.com/docs/cookbook/setup/ddev).
+    Read more about developing your Kirby project with DDEV in our [extensive DDEV guide](https://getkirby.com/docs/cookbook/setup/ddev).
 
 ## Laravel
 
@@ -590,7 +590,7 @@ The Laravel project type can be used for [StarterKits](https://laravel.com/docs/
     ```
 
 !!!tip "Add Vite support?"
-Since Laravel v9.19, Vite is included as the default [asset bundler](https://laravel.com/docs/vite). There are small tweaks needed in order to use it: [Working with Vite in DDEV - Laravel](https://ddev.com/blog/working-with-vite-in-ddev/#laravel).
+    Since Laravel v9.19, Vite is included as the default [asset bundler](https://laravel.com/docs/vite). There are small tweaks needed in order to use it: [Working with Vite in DDEV - Laravel](https://ddev.com/blog/working-with-vite-in-ddev/#laravel).
 
 ## Magento
 
@@ -971,7 +971,7 @@ ddev exec "sed -i -e 's|<name>.*</name>|<name>${SULU_PROJECT_NAME}</name>|g' -e 
 ```
 
 !!!warning "Caution"
-Changing the `<key>` for a webspace later on causes problems. It is recommended to decide on the value for the key before the database is build in the next step.
+    Changing the `<key>` for a webspace later on causes problems. It is recommended to decide on the value for the key before the database is build in the next step.
 
 Now build the database. Building with the `dev` argument adds the user `admin` with the password `admin` to your project.
 
@@ -984,7 +984,7 @@ ddev launch /admin
 ```
 
 !!!tip
-If you don't want to add an admin user use the `prod` argument instead
+    If you don't want to add an admin user use the `prod` argument instead
 
     ```bash
     ddev execute bin/adminconsole sulu:build prod
@@ -1040,7 +1040,7 @@ DDEV automatically updates or creates the `.env.local` file with the database in
     ```
 
 !!!tip "Consuming Messages (Running the Worker)"
-Edit `.ddev/config.yaml` in your project directory and uncomment `post-start` hook to see `messenger:consume` command logs, and run:
+    Edit `.ddev/config.yaml` in your project directory and uncomment `post-start` hook to see `messenger:consume` command logs, and run:
 
     ```bash
     ddev exec symfony server:log
@@ -1058,7 +1058,6 @@ Edit `.ddev/config.yaml` in your project directory and uncomment `post-start` ho
     ddev exec touch public/FIRST_INSTALL
     ddev launch /typo3/install.php
     ```
-
 === "Git Clone"
 
     ```bash

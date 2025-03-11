@@ -925,7 +925,6 @@ The Laravel project type can be used for [Statamic](https://statamic.com/) like 
     ddev php please make:user
     ddev launch /cp
     ```
-
 === "Git Clone"
 
     ```bash
@@ -1058,6 +1057,7 @@ DDEV automatically updates or creates the `.env.local` file with the database in
     ddev exec touch public/FIRST_INSTALL
     ddev launch /typo3/install.php
     ```
+
 === "Git Clone"
 
     ```bash
